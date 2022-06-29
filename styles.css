@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #2F303A;
+    font-family: Poppins, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    min-height: 100vh;
+}
+
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Elements */
+
+.header-icon {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-logo-name {
+    margin-left: 1rem;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 140px;
+}
+
+/* Navigation in Header */
+
+.main-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.main-nav a:hover {
+    color: #adadad;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.btn {
+    color: inherit;
+    text-decoration: none;
+    background-color: #1cbebe;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.home-main-section a:hover {
+    color: #adadad;
+    background-color: #018f8f;
+}
