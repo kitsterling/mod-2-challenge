@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
+/* This style sheet is for shared styles */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -72,16 +72,29 @@ body {
     padding: 0 40px;
 }
 
+.home-main-section a:hover {
+    background-color: #018f8f;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
 .btn {
     color: inherit;
     text-decoration: none;
-    background-color: #1cbebe;
-    margin: 20px;
+    background-color: #24bebe;
     padding: 10px 20px;
+    margin: 5px;
     border-radius: 10px;
-}
-
-.home-main-section a:hover {
-    color: #adadad;
-    background-color: #018f8f;
+    font-size: 0.9rem;
 }

@@ -1,0 +1,57 @@
+
+/* This style sheet is for Index page styles */
+
+.home-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.home-main-section .profile-img {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.home-main-section .self-image {
+    background-image: url(images/ditto.jpg);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.home-main-section .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+}
+
+@media (max-width: 900px) {
+    .home-main-section .profile-img {
+        display: none;
+    }
+
+    .home-main-section {
+        justify-content: center;
+    }
+}
+
+/* .home-page-circle-1 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: #42a3cf;
+    bottom: 5vw;
+    left: 5vw;
+    opacity: 25%;
+    z-index: -1;
+} */
