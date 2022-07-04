@@ -181,7 +181,7 @@ nav.main-nav ul li {
     flex-flow: row wrap;
     position: relative;
     width: relative;
-    padding: 10px 200px 10px 0;
+    padding: 10px 0px 10px 0;
     margin: 5px;
     box-sizing: border-box;
     z-index: 0;
@@ -364,17 +364,32 @@ h4 {
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND PHONES/TABLETS */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 950px) {
     body {
-            --nav-height: 210px;
+        --nav-height: 210px;
+    }
+    
+    .title {
+        margin-top: 250px;
+        padding: 20px;
     }
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 745px) {
+    .title {
+        margin-top: 250px;
+        padding: 20px;
+    }
+    .primary-project {
+        max-width: 50%;
+    }
 }
 
 @media screen and (max-width: 575px) {
+    .title {
+        margin-top: 250px;
+        padding: 20px;
+    }
 
 }
 /* KEEP AT THE BOTTOM */
