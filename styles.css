@@ -75,6 +75,7 @@ body {
 
 .home-main-section a:hover {
     background-color: #018f8f;
+    transition: 0.75s;
 }
 
 .title {
@@ -100,55 +101,90 @@ body {
     font-size: 0.9rem;
 }
 
+@keyframes purple-glow {
+    0% {
+      background-color: #692053;
+      box-shadow: 0 0 3px #692053;
+    }
+    50% {
+      background-color: #b35396;
+      box-shadow: 0 0 10px #b35396;
+    }
+    100% {
+      background-color: #692053;
+      box-shadow: 0 0 3px #692053;
+    }
+  }
+.btn.purple{
+    animation: purple-glow 2500ms infinite;
+}
+
+@keyframes blue-glow {
+    0% {
+      background-color: #1c6d69;
+      box-shadow: 0 0 3px #1c6d69;
+    }
+    50% {
+      background-color: #00b6ad;
+      box-shadow: 0 0 10px #00b6ad;
+    }
+    100% {
+      background-color: #1c6d69;
+      box-shadow: 0 0 3px #1c6d69;
+    }
+  }
+.btn.cyan{
+    animation: blue-glow 2500ms infinite;
+}
+
+.btn-grid {
+    display: inline-flex;
+}
 /* Skills Section */
+.skillset {
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+}
 
 ul.skills {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    width: 450px;
-    margin: 100px auto 0;
-    padding: 10px;
+    width: relative;
+    padding: 10px auto;
+    margin: 5px;
     box-sizing: border-box;
 }
 
 ul.skills li {
+    border-radius: 10px;
     display: flex;
     background: rgba(255, 255, 255, .1);
     padding: 10px 20px;
+    margin: 5px;
     color: #fff;
-    margin: 5px 0;
     transition: 0.5s;
 }
 
 ul.skills li:nth-child(1) {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.55);
 }
 
 ul.skills li:nth-child(2) {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.45);
 }
+
 ul.skills li:nth-child(3) {
     background: rgba(255, 255, 255, 0.4);
 }
+
 ul.skills li:nth-child(4) {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+ul.skills li:nth-child(5) {
     background: rgba(255, 255, 255, 0.3);
-}
-
-ul.skills li span:nth-child(1) {
-    width: 30px;
-}
-
-ul.skills li span:nth-child(1) {
-    width: 200px;
-}
-
-ul.skills li span:nth-child(1) {
-    width: 100px;
-    text-align: right;
-}
-
-ul.skills li span:nth-child(1) {
-    width: 70px;
-    text-align: right;
 }
 
 ul.skills li:hover {
