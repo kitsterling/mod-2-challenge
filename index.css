@@ -17,13 +17,13 @@
 }
 
 .home-main-section .self-image {
-    background-image: url(images/ditto.jpg);
+    background-image: url(images/autumn-and-kit.jpg);
     flex-grow: 1;
-    max-height: 70vh;
+    max-height: 85vh;
     min-width: 30vw;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    margin: 25px;
 }
 
 .home-main-section .cta {
