@@ -332,7 +332,7 @@ nav.main-nav ul li {
 }
 
 .ditto {
-    background-image: url(images/ditto.jpg);
+    background-image: url(images/portfolio.png);
     background-size: cover;
     opacity: 0.6;
 }
@@ -349,6 +349,11 @@ nav.main-nav ul li {
     border: 3px solid #df7cc1;
     transition: 0.35s;
     opacity: 1;
+}
+
+.no-dec {
+    color: white;
+    text-decoration: none;
 }
 
 /* About Me Section */
