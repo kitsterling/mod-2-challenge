@@ -12,10 +12,9 @@
 <body class="container full-height-grow">
     
     <header class="main-header">
-
         <a href="index.html" class="header-logo">
             <img class="header-icon" src="images/kit.jpg">
-            <div class="header-logo-name">HOME</div>
+            <div class="header-logo-name">> Hey, I'm the home button.</div> <!-- make this random text every visit -->
         </a>
 
         <nav class="main-nav">
@@ -26,22 +25,35 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
     </header>
+
     <section class="home-main-section">
         <div class="profile-img"> <!-- Left Div -->
             <img class="self-image" src="images/autumn-and-kit.jpg">
         </div>
+
         <div class="cta"> <!-- Right Div -->
             <h1 class="title">Kit Sterling</h1>
+
             <span class="subtitle">Rome wasn't built in a day.</span>
+
             <br> <br>
+
             <section>
                 <a href="#projects" class="btn cyan">View Projects</a>
                 <a href="#skills" class="btn purple">View Skills</a>
             </section>
+
+            <br>
+
+            <section>
+                <a href="https://github.com/kitsterling/">
+                    <img class="github-icon" src="images/github.png">
+                </a>
+            </section>
         </div>
     </section>
+
     <section id="skills">
         <h2>Skills</h2>
             <section class="skills-container">
@@ -55,23 +67,37 @@
                     </ul>
             </section>
     </section>
+
     <section id="projects">
         <h2>Projects</h2>
         <section class="projects-container">
-            <ul class="projects">
-                <img class="project-1" src="images/ditto.jpg">
-            </ul>
+                <div class="primary-project run-buddy">
+                    <div class="project-text">
+                        <h3>Run Buddy</h3>
+                        <h4>HTML, CSS</h4>
+                    </div>
+                </div>
+
+                <div class="secondary-project ditto">
+                    <div class="project-text">
+                        <h3>Portfolio Website</h3>
+                        <h4>HTML, CSS, JS</h4>
+                    </div>
+                </div>
+        </section>
     </section>
-    </section>
+
     <section id="about-me">
         <h2>About Me</h2>
         <h4>    Yo, this is a story all about how my life got flipped, turned upside-down.</h4>
     </section>
+
     <section id="contact">
         <h2>Contact</h2>
+        <h4>Email: 20ferrets@gmail.com</h4>
     </section>
-    <script>
-        // Enables hidden nav bar feature
+
+    <script> // Enables hidden nav bar feature
         {
             const nav = document.querySelector(".main-header");
             let lastScrollY = window.scrollY;
@@ -86,5 +112,6 @@
             })
         }
     </script>
+
 </body>
 </html>

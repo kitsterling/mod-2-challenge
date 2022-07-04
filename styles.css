@@ -34,20 +34,17 @@ body {
     display: flex;
     align-items: center;
     font-size: 1.25em;
-    color: inherit;
-    text-decoration: none;
-    padding-right: 10px;
 }
 
 .header-logo-name {
     margin-left: 1rem;
-    font-weight: bold;
+    font-weight: 100;
 }
 
 .main-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
+    flex-flow: row wrap;
+    justify-content: space-between; 
     height: var(--nav-height);
     width: 100%;
     position: fixed;
@@ -59,6 +56,7 @@ body {
     transition: transform 0.2s;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    z-index: 1;
 }
 
 .nav--hidden {
@@ -73,27 +71,22 @@ body {
     list-style: none;
 }
 
-.main-nav a {
-    color: #54838f;
+.main-header a {
+    color: #ffffff;
     text-decoration: none;
-    padding: 1rem;
+    transition: 3s;
 }
 
 .main-header a:hover {
-    color: #fff;
+    color: #ffd900;
     border-radius: 10px;
-    box-shadow: 0 0 22px #fff;
+    transition: 0.33s;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-}
-
-.home-main-section a:hover {
-    background-color: #018f8f;
-    transition: 0.75s;
 }
 
 nav.main-nav ul li {
@@ -107,7 +100,7 @@ nav.main-nav ul li {
     font-weight: 500;
     font-size: 3em;
     margin-bottom: 1rem;
-    margin-top: 0;
+    margin-top: 180px;
 }
 
 .subtitle {
@@ -124,6 +117,7 @@ nav.main-nav ul li {
     margin: 5px;
     border-radius: 10px;
     font-size: 0.9rem;
+    z-index: 5;
 }
 
 @keyframes purple-glow {
@@ -162,8 +156,17 @@ nav.main-nav ul li {
     animation: blue-glow 2500ms infinite;
 }
 
-.btn-grid {
-    display: inline-flex;
+.github-icon {
+    align-content: left;
+    max-width: 25%;
+    height: auto;
+    margin-top: 0px;
+    padding: 0px 15px 0px 10px;
+    z-index: 0;
+}
+
+.github-icon a:hover {
+    /**/
 }
 /* Skills Section */
 
@@ -173,17 +176,18 @@ nav.main-nav ul li {
     align-content: left;
 }
 
-ul.skills {
+.skills {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     position: relative;
     width: relative;
-    padding: 10px auto;
+    padding: 10px 200px 10px 0;
     margin: 5px;
     box-sizing: border-box;
+    z-index: 0;
 }
 
-ul.skills li {
+.skills li {
     border-radius: 10px;
     display: flex;
     background: rgba(255, 255, 255, .1);
@@ -193,27 +197,27 @@ ul.skills li {
     transition: 0.5s;
 }
 
-ul.skills li:nth-child(1) {
+.skills li:nth-child(1) {
     background: rgba(255, 255, 255, 0.55);
 }
 
-ul.skills li:nth-child(2) {
+.skills li:nth-child(2) {
     background: rgba(255, 255, 255, 0.45);
 }
 
-ul.skills li:nth-child(3) {
+.skills li:nth-child(3) {
     background: rgba(255, 255, 255, 0.4);
 }
 
-ul.skills li:nth-child(4) {
+.skills li:nth-child(4) {
     background: rgba(255, 255, 255, 0.35);
 }
 
-ul.skills li:nth-child(5) {
+.skills li:nth-child(5) {
     background: rgba(255, 255, 255, 0.3);
 }
 
-ul.skills li:hover {
+.skills li:hover {
     transform: scale(1.06);
     background: #24bebe;
 }
@@ -224,10 +228,11 @@ ul.skills li:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: left;
+    align-content: center;
+    transition: 0.5s;
 }
 
-ul.projects {
+.projects {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -238,7 +243,7 @@ ul.projects {
     box-sizing: border-box;
 }
 
-ul.projects li {
+.projects li {
     border-radius: 10px;
     display: flex;
     background: rgba(255, 255, 255, .1);
@@ -248,35 +253,102 @@ ul.projects li {
     transition: 0.5s;
 }
 
-ul.projects li:nth-child(1) {
+.projects li:nth-child(1) {
     background: rgba(255, 255, 255, 0.55);
 }
 
-ul.projects li:nth-child(2) {
+.projects li:nth-child(2) {
     background: rgba(255, 255, 255, 0.45);
 }
 
-ul.projects li:nth-child(3) {
+.projects li:nth-child(3) {
     background: rgba(255, 255, 255, 0.4);
 }
 
-ul.projects li:nth-child(4) {
+.projects li:nth-child(4) {
     background: rgba(255, 255, 255, 0.35);
 }
 
-ul.projects li:nth-child(5) {
+.projects li:nth-child(5) {
     background: rgba(255, 255, 255, 0.3);
 }
 
-ul.projects li:hover {
+.projects li:hover {
     transform: scale(1.06);
     background: #24bebe;
 }
 
-/* Testing */
+.primary-project {
+    border: 3px dashed #df7cc1;
+    z-index: 0;
+    border-radius: 10px;
+    height: 33vh;
+    width: 650px;
+    margin: 8px;
+}
 
-.project-1 {
-    z-index: -1;
+.secondary-project {
+    border: 3px dashed #df7cc1;
+    z-index: 0;
+    border-radius: 10px;
+    height: 33vh;
+    width: 33vh;
+    margin: 8px;
+}
+
+.primary-project.run-buddy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: 0;
+}
+
+.secondary-project.ditto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.project-text {
+    padding: 6px 0 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+}
+
+.project-text h3 {
+    margin: 0;
+    padding-left: 12px;
+}
+
+.project-text h4 {
+    margin: 0;
+    padding-left: 12px;
+}
+
+.run-buddy {
+    background-image: url(images/run-buddy.png);
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.ditto {
+    background-image: url(images/ditto.jpg);
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.primary-project:hover {
+    box-shadow: 0 0 16px #df7cc1;
+    border: 3px solid #df7cc1;
+    transition: 0.25s;
+    opacity: 1;
+}
+
+.secondary-project:hover {
+    box-shadow: 0 0 16px #df7cc1;
+    border: 3px solid #df7cc1;
+    transition: 0.35s;
+    opacity: 1;
 }
 
 /* About Me Section */
@@ -285,3 +357,20 @@ h4 {
     text-decoration: none;
     font-weight: normal;
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND PHONES/TABLETS */
+@media screen and (max-width: 980px) {
+    body {
+            --nav-height: 210px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
+/* KEEP AT THE BOTTOM */
+/* KEEP AT THE BOTTOM */
