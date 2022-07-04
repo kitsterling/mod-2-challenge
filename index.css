@@ -1,5 +1,4 @@
-
-/* This style sheet is for Index page styles */
+/* Originally I was going to have them on separate html documents and css pages but then I just decided to use styles.css */
 
 .home-main-section {
     display: flex;
@@ -14,16 +13,15 @@
     display: flex;
     align-items: stretch;
     justify-content: flex-end;
+    max-width: 60%;
 }
 
 .home-main-section .self-image {
-    background-image: url(images/autumn-and-kit.jpg);
-    flex-grow: 1;
-    max-height: 85vh;
-    min-width: 30vw;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 25px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 180px;
 }
 
 .home-main-section .cta {
