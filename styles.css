@@ -165,11 +165,6 @@ nav.main-nav ul li {
     z-index: 0;
 }
 
-.github-icon a:hover {
-    /**/
-}
-/* Skills Section */
-
 .skills-container {
     display: flex;
     flex-direction: row;
@@ -332,19 +327,19 @@ nav.main-nav ul li {
 }
 
 .run-buddy {
-    background-image: url(images/run-buddy.png);
+    background-image: url(./images/run-buddy.png);
     background-size: cover;
     opacity: 0.6;
 }
 
 .doggypedia {
-    background-image: url(images/doggypedia.png);
+    background-image: url(./images/doggypedia.png);
     background-size: cover;
     opacity: 0.6;
 }
 
 .ditto {
-    background-image: url(images/portfolio.png);
+    background-image: url(./images/portfolio.png);
     background-size: cover;
     opacity: 0.6;
 }
