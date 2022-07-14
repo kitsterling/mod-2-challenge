@@ -296,7 +296,7 @@ nav.main-nav ul li {
     margin: 8px;
 }
 
-.primary-project.run-buddy {
+.primary-project.doggypedia {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -304,6 +304,12 @@ nav.main-nav ul li {
 }
 
 .secondary-project.ditto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.secondary-project.run-buddy {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -327,6 +333,12 @@ nav.main-nav ul li {
 
 .run-buddy {
     background-image: url(images/run-buddy.png);
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.doggypedia {
+    background-image: url(images/doggypedia.png);
     background-size: cover;
     opacity: 0.6;
 }
